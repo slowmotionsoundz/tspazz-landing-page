@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSPAZZ | Community Fan Wall</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { padding-top: 80px; }
+        .engage { 
+            min-height: calc(100vh - 150px); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background: radial-gradient(circle at center, var(--bg-soft) 0%, var(--bg-dark) 100%);
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">TSPAZZ</a>
+            <ul class="nav-links">
+                <li><a href="index.html#music">Music</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="engagement" class="engage">
+        <div class="container" style="width: 100%;">
+            <div class="chat-container glass" data-reveal>
+                <div class="chat-header">
+                    <h2>The Fan Wall</h2>
+                    <p>Live chat with the TSpazz community.</p>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="chat-message" style="margin: auto; background: transparent; border: none; opacity: 0.5;">
+                        <p>Loading connection to the server...</p>
+                    </div>
+                </div>
+                <form class="chat-form" id="chat-form">
+                    <input type="text" id="chat-name" placeholder="Your Name" required maxlength="20">
+                    <div class="chat-input-row">
+                        <input type="text" id="chat-input" placeholder="Type a message..." required autocomplete="off">
+                        <button type="submit" class="btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Firebase SDK (Modular) -->
+    <script type="module" src="firebase-chat.js?v=refresh"></script>
+    <script src="main.js"></script>
+</body>
+</html>

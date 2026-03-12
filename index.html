@@ -16,9 +16,8 @@
         <div class="container">
             <a href="#" class="logo">TSPAZZ</a>
             <ul class="nav-links">
-                <li><a href="#music">Music</a></li>
-                <li><a href="#video">Video</a></li>
-                <li><a href="#engagement">Community</a></li>
+                <li><a href="index.html#music">Music</a></li>
+                <li><a href="community.html">Community</a></li>
             </ul>
         </div>
     </nav>
@@ -125,30 +124,6 @@
         </div>
     </section>
 
-    <section id="engagement" class="engage">
-        <div class="container">
-            <div class="chat-container glass" data-reveal>
-                <div class="chat-header">
-                    <h2>The Fan Wall</h2>
-                    <p>Live chat with the TSpazz community.</p>
-                </div>
-                <div class="chat-messages" id="chat-messages">
-                    <div class="chat-message" style="margin: auto; background: transparent; border: none; opacity: 0.5;">
-                        <p>Loading connection to the server...</p>
-                        <p style="font-size: 0.8rem; margin-top: 0.5rem;">(Setup Firebase to enable real-time chat)</p>
-                    </div>
-                </div>
-                <form class="chat-form" id="chat-form">
-                    <input type="text" id="chat-name" placeholder="Your Name" required maxlength="20">
-                    <div class="chat-input-row">
-                        <input type="text" id="chat-input" placeholder="Type a message..." required autocomplete="off">
-                        <button type="submit" class="btn">Send</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="container">
             <div class="logo" style="margin-bottom: 2rem;">TSPAZZ</div>
@@ -162,8 +137,6 @@
         </div>
     </footer>
 
-    <!-- Firebase SDK (Modular) -->
-    <script type="module" src="firebase-chat.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
