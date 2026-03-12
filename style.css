@@ -395,12 +395,21 @@ footer {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: flex;
+        gap: var(--spacing-sm);
+        font-size: 0.9rem;
     }
     .chat-input-row {
         flex-direction: column;
     }
     .chat-input-row .btn, #chat-name {
         width: 100%;
+    }
+    .social-links {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+    .music-card {
+        flex: 0 0 260px; /* slightly smaller cards on mobile */
     }
 }
