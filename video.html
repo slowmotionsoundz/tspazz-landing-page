@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TSPAZZ | Community Fan Wall</title>
+    <title>TSPAZZ | Video Theater</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,13 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body { padding-top: 80px; }
-        .engage { 
-            min-height: calc(100vh - 150px); 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            background: radial-gradient(circle at center, var(--bg-soft) 0%, var(--bg-dark) 100%);
-        }
     </style>
 </head>
 <body>
@@ -33,25 +26,17 @@
         </div>
     </nav>
 
-    <section id="engagement" class="engage">
+    <section class="theater">
         <div class="container" style="width: 100%;">
-            <div class="chat-container glass" data-reveal>
-                <div class="chat-header">
-                    <h2>The Fan Wall</h2>
-                    <p>Live chat with the TSpazz community.</p>
+            <div class="theater-header" data-reveal>
+                <h2>Love Is A Fool</h2>
+                <p>The Official Music Video</p>
+            </div>
+            
+            <div class="video-container" data-reveal>
+                <div class="video-wrapper glass">
+                    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/music-video/love-is-a-fool/1884509635"></iframe>
                 </div>
-                <div class="chat-messages" id="chat-messages">
-                    <div class="chat-message" style="margin: auto; background: transparent; border: none; opacity: 0.5;">
-                        <p>Loading connection to the server...</p>
-                    </div>
-                </div>
-                <form class="chat-form" id="chat-form">
-                    <input type="text" id="chat-name" placeholder="Your Name" required maxlength="20">
-                    <div class="chat-input-row">
-                        <input type="text" id="chat-input" placeholder="Type a message..." required autocomplete="off">
-                        <button type="submit" class="btn">Send</button>
-                    </div>
-                </form>
             </div>
         </div>
     </section>
@@ -69,8 +54,6 @@
         </div>
     </footer>
 
-    <!-- Firebase SDK (Modular) -->
-    <script type="module" src="firebase-chat.js?v=refresh"></script>
     <script src="main.js"></script>
 </body>
 </html>
